@@ -1,6 +1,7 @@
 {
   "name": "@patomation/find",
   "version": "1.1.0",
+  "private": false,
   "description": "Deep nested search of object by key. Returns object. ",
   "main": "src/index.js",
   "scripts": {

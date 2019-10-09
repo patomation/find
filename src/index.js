@@ -15,6 +15,6 @@ const find = (searchKey, object) => {
   }
   //If nothing was fount return null
   return null
-};
+}
 
-export default find
+module.exports = find

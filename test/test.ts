@@ -12,7 +12,7 @@ describe('find', (): void => {
       }
     }
     const expected = 'beans'
-    const actual = find('cool', inputObject)
+    const actual = find<string, typeof inputObject>('cool', inputObject)
     expect(actual).to.equal(expected)
   })
 
@@ -40,7 +40,7 @@ describe('find', (): void => {
     const expected = {
       cool: 'beans'
     }
-    const actual = find('bar', inputObject)
+    const actual = find<{ cool: string }>('bar', inputObject)
     expect(actual).to.deep.equal(expected)
   })
 
@@ -55,7 +55,7 @@ describe('find', (): void => {
       }
     }
     const expected = 'beans'
-    const actual = find('cool', inputObject)
+    const actual = find<string>('cool', inputObject)
     expect(actual).to.deep.equal(expected)
   })
 })

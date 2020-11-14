@@ -1,6 +1,6 @@
 {
   "name": "@patomation/find",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": false,
   "description": "Deep nested search of object by key. Returns object. ",
   "main": "lib/index.cjs.js",
